@@ -1,0 +1,64 @@
+{% extends "base.html"%}
+{% load static from staticfiles %}
+{% load cms_content %}
+
+{% block page_title %}Contatti{% endblock %}
+
+{% block content %}
+
+
+<!--blue-->
+<div id="blue">
+    <div class="container">
+    <div class="row">
+      <h3>Contatti</h3>
+    </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+<!--end of blue-->
+
+
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-5">
+     <img src="{% static "img/mail-logo2.png" %}" style="width: 50px; text-align: center" alt="" />
+      <h2>Non aspettare, contattaci!</h2>
+      <form role="form">
+        <div class="form-group">
+          <label for="email">Nome:</label>
+          <input type="email" class="form-control form-control1" id="email" placeholder="Cognome e Nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control form-control1" id="email" placeholder="indirizzo email">
+        </div>
+        <div class="form-group">
+          <label for="comment">Messaggio:</label>
+          <textarea class="form-control form-control1" rows="5" id="comment"></textarea>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="button" class="btn btn-success">Invia Messaggio</button>
+      </form>
+
+   </div>
+
+   <div class="col-lg-1"></div>
+
+   <div class="col-lg-6">
+     <img src="{% static "img/inmagik_circle.png" %}" style="width: 50px" alt="" />
+     <h3>INMAGIK srl</h3>
+    <p>
+      Via Masone 6 </br>
+      24121-Bergamo </br>
+      Italy </br>
+      <a href="mailto:joe@example.com?subject=feedback">info@inmagik.com</a></br>
+      TEL 035 19901780
+    </p>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+
+
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends "base.html"%}
+{% load static from staticfiles %}
+{% load cms_content %}
+
+{% block page_title %}Tour{% endblock %}
+
+{% block content %}
+
+
+<!--Tour-->
+<div id="blue">
+    <div class="container">
+    <div class="row">
+      <h3>Tour</h3>
+    </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+<!--end of Tour-->
+
+
+  <div  class="big-image">
+    <img class="logo1" src="{% static "img/monkeyLogo.png" %}" alt="">
+    <h2>T_MoNKEY CMS</h2>
+    <p>Solo quello che davvero ti serve!!</p>
+    <button type="button" class="btn btn-primary">Video</button>
+    <button type="button" class="btn btn-primary">Download</a></button>
+ </div>
+
+<!--feature white 1-->
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+
+   <div class="col-lg-6">
+     <h3>SUPPORTO DI TEMPLATE POTENTE E E FLESSIBILE</h3>
+    <p>
+      {% cms_text_content "feature1" %}
+    </p>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature white-->
+
+
+<!--feature grey 2-->
+<div class="feature-container mtb block_grey">
+ <div class="row">
+
+   <div class="col-lg-6">
+     <h3>GESTIONE DEI CONTENUTI AD HOC</h3>
+<p>
+    {% cms_text_content "feature2" %}
+</p>
+   </div>
+
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature grey-->
+
+<!--feature white 3-->
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+
+   <div class="col-lg-6">
+     <h3>ADMIN CONFIGURABILE</h3>
+    <p>
+      {% cms_text_content "feature3" %}
+    </p>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature white-->
+
+<!--feature grey 4-->
+<div class="feature-container mtb block_grey">
+ <div class="row">
+
+   <div class="col-lg-6">
+     <h3>INFRASTRUTTURA EFFICIENTE E SCALABILE</h3>
+<p>
+    {% cms_text_content "feature4" %}
+</p>
+   </div>
+
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature grey-->
+
+<!--feature white 5-->
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+
+   <div class="col-lg-6">
+     <h3>ANTEPRIMA E STORICO DELLE MODIFICHE</h3>
+    <p>
+      {% cms_text_content "feature5" %}
+    </p>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature white-->
+
+
+<!--feature grey 6-->
+<div class="feature-container mtb block_grey">
+ <div class="row">
+
+   <div class="col-lg-6">
+     <h3>MULTILINGUA</h3>
+<p>
+    {% cms_text_content "feature6" %}
+</p>
+   </div>
+
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature grey-->
+
+
+<!--feature white 7-->
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-6">
+     <img class="img-responsive" src="{% static "img/112233.png" %}" alt="">
+   </div>
+
+   <div class="col-lg-6">
+     <h3>CUSTOM ANALYTICS</h3>
+    <p>
+      {% cms_text_content "feature7" %}
+    </p>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature white-->
+
+
+{% endblock %}

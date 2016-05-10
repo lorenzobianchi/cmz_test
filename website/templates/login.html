@@ -1,0 +1,66 @@
+{% extends "base.html"%}
+{% load static from staticfiles %}
+{% load cms_content %}
+
+{% block page_title %}Log In{% endblock %}
+
+{% block content %}
+
+<!--blue-->
+<div id="blue">
+    <div class="container">
+    <div class="row">
+      <h3>Log In</h3>
+    </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+<!--end of blue-->
+
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-3"></div>
+   <div class="col-lg-6">
+
+     <h3 style="text-align: center"><img class="logo2" src="{% static "img/monkeyLogo.png" %}" alt="t-monkey_logo"></br>PROVA T_MoNKEY CMS</h3>
+     <br>
+     <br>
+     <form role="form">
+       <div class="form-group wow">
+         <label for="email">Nome:</label>
+         <input type="email" class="form-control" id="email" placeholder="Cognome e Nome">
+       </div>
+       <br>
+       <div class="form-group wow">
+         <label for="email">Email:</label>
+         <input type="email" class="form-control" id="email" placeholder="indirizzo email">
+       </div>
+       <br>
+       <div class="form-group wow">
+         <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Password">
+      </div>
+      <br>
+      <div class="checkbox checkbox1">
+        <label><input type="checkbox"><small>Ho letto e accetto l'informativa sulla privacy e sui cookies</small></label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"><small>Ho letto e accetto i termini generali di utilizzo</small></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Accedi</button>
+    </form>
+   </div>
+
+   <div class="col-lg-3"></div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of feature grey-->
+
+
+
+
+
+
+
+
+
+{% endblock %}

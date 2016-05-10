@@ -1,0 +1,131 @@
+{% extends "base.html"%}
+{% load static from staticfiles %}
+{% load cms_content %}
+
+{% block page_title %}Servizi{% endblock %}
+
+{% block content %}
+
+<!--blue-->
+<div id="blue">
+    <div class="container">
+    <div class="row">
+      <h3>Servizi</h3>
+    </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+<!--end of blue-->
+
+<div class="container mtb">
+ <div class="row">
+   <div class="col-lg-8 col-lg-offset-2 centered">
+     <h2>Prezzi</h2>
+     <br>
+     <div class="hline"></div>
+   </div>
+ </div>
+</div><! --/container -->
+
+
+
+
+<div id="service">
+ <div class="container">
+   <div class="row centered">
+     <div class="col-md-3">
+       <img class="icon1" src="{% static "img/battery1.png" %}" alt="" />
+       <br>
+       <h4>Fino a 5 siti</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+     </div>
+     <div class="col-md-3">
+       <img class="icon1" src="{% static "img/battery2.png" %}" alt="" />
+       <br>
+       <h4>Fino a 20 siti</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+     </div>
+     <div class="col-md-3">
+       <img class="icon1" src="{% static "img/battery3.png" %}" alt="" />
+       <br>
+       <h4>Fino a 50 siti</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+     </div>
+     <div class="col-md-3">
+       <img class="icon1" src="{% static "img/battery4.png" %}" alt="" />
+       <br>
+       <h4>Fino a 100 siti</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+     </div>
+   </div>
+ </div><! --/container -->
+</div><! --/service -->
+
+
+<div class="container mtb">
+ <div class="row">
+   <div class="col-lg-8 col-lg-offset-2 centered">
+     <h2>Pacchetti Assistenza</h2>
+     <br>
+     <div class="hline"></div>
+   </div>
+ </div>
+</div><! --/container -->
+
+<div id="service">
+ <div class="container">
+   <div class="row centered">
+     <div class="col-md-4">
+       <i class="fa fa-heart-o"></i>
+       <h4>PACCHETTO SILVER</h4>
+       <p>
+         Assistenza remota: ? h</br>
+         Assistenza telefonica: ? h</br>
+         Assistenza a domicilio: ? h</br>
+         <strong>Prezzo: ?</strong>
+       </p>
+       <p><br/><a href="#" class="btn btn-theme">Buy Now</a></p>
+     </div>
+     <div class="col-md-4">
+       <i class="fa fa-flask"></i>
+       <h4>PACCHETTO GOLD</h4>
+       <p>
+         Assistenza remota: ? h</br>
+         Assistenza telefonica: ? h</br>
+         Assistenza a domicilio: ? h</br>
+         <strong>Prezzo: ?</strong>
+       </p>
+       <p><br/><a href="#" class="btn btn-theme">Buy Now</a></p>
+     </div>
+     <div class="col-md-4">
+       <i class="fa fa-trophy"></i>
+       <h4>PACCHETTO DIAMOND</h4>
+       <p>
+         Assistenza remota: ? h</br>
+         Assistenza telefonica: ? h</br>
+         Assistenza a domicilio: ? h</br>
+         <strong>Prezzo: ?</strong>
+       </p>
+       <p><br/><a href="#" class="btn btn-theme">Buy Now</a></p>
+     </div>
+   </div>
+ </div><! --/container -->
+</div><! --/service -->
+
+<div class="container mtb">
+ <div class="row">
+   <div class="col-lg-8 col-lg-offset-2 centered">
+     <i class="fa fa-cog fa-spin fa-3x fa-fw margin-bottom"></i>
+     <h2>Implementazioni Custom</h2>
+     <br>
+     <div class="hline"></div>
+     <br>
+     <h4>Forniamo un servizio completo di implementazioni custom,dalla consulenza, alla progettazione, fino alla realizzazione.</h4>
+   </div>
+ </div>
+</div><! --/container -->
+
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "base.html"%}
+{% load static from staticfiles %}
+{% load cms_content %}
+
+{% block page_title %}Learn{% endblock %}
+
+{% block content %}
+
+<!--blue-->
+<div id="blue">
+    <div class="container">
+    <div class="row">
+      <h3>Learn</h3>
+    </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+<!--end of blue-->
+
+<!--documentation-->
+<div class="feature-container mtb">
+ <div class="row">
+   <div class="col-lg-4">
+     <div class="list-group">
+       <a href="#" class="list-group-item ">Welcome</a>
+       <a href="#" class="list-group-item">Cos'è T_MoNKEY?</a>
+       <a href="#" class="list-group-item">Installazione</a>
+       <a href="#" class="list-group-item disabled">Quick start</a>
+       <a href="#" class="list-group-item">Project</a>
+       <a href="#" class="list-group-item">Content</a>
+       <a href="#" class="list-group-item">Templates</a>
+       <a href="#" class="list-group-item">Deployment</a>
+     </div>
+   </div>
+
+   <div class="col-lg-2"></div>
+
+   <div class="col-lg-6">
+     <h3>Documentation</h3>
+    <p>
+      {% cms_text_content "documentation-text" %}
+    </p>
+    <a href="https://github.com/inmagik"><img src="{% static "img/Octocat.png" %}" style="width: 100px" alt="octocat" />T_MoNKEY_Repository</a>
+   </div>
+ </div><! --/row -->
+</div><! --/container -->
+<!--end of documentation-->
+
+
+
+
+<div class="container mtb">
+ <div class="row">
+   <div class="col-lg-8 col-lg-offset-2 centered">
+     <h2>Video Tutorial</h2>
+     <br>
+     <div class="hline"></div>
+     <br>
+     <p>Carichiamo periodicamente nuovi video tutorial per aiutare utenti finali e sviluppatori ad usare al meglio il nostro fantastico CMS</p>
+   </div>
+ </div>
+</div><! --/container -->
+
+<div id="portfoliowrap">
+     <div class="portfolio-centered">
+         <div class="recentitems portfolio">
+
+     <div class="portfolio-item graphic-design">
+       <div class="he-wrap tpl6">
+       <img src="{% static "img/portfolio/portfolio_09.jpg" %}"  alt="">
+         <div class="he-view">
+           <div class="bg a0" data-animate="fadeIn">
+                             <h3 class="a1" data-animate="fadeInDown">Video Tutorial 1</h3>
+                             <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-play-circle-o fa-2x"></i></a>
+                             <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-download fa-2x"></i></a>
+                       </div><!-- he bg -->
+         </div><!-- he view -->
+       </div><!-- he wrap -->
+     </div><!-- end col-12 -->
+
+             <div class="portfolio-item web-design">
+                 <div class="he-wrap tpl6">
+       <img src="{% static "img/portfolio/portfolio_02.jpg" %}" alt="">
+         <div class="he-view">
+           <div class="bg a0" data-animate="fadeIn">
+                             <h3 class="a1" data-animate="fadeInDown">Video Tutorial 2</h3>
+                             <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-play-circle-o fa-2x"></i></a>
+                             <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-download fa-2x"></i></a>
+                       </div><!-- he bg -->
+         </div><!-- he view -->
+       </div><!-- he wrap -->
+     </div><!-- end col-12 -->
+
+             <div class="portfolio-item graphic-design">
+                 <div class="he-wrap tpl6">
+       <img src="{% static "img/portfolio/portfolio_03.jpg" %}" alt="">
+         <div class="he-view">
+           <div class="bg a0" data-animate="fadeIn">
+                             <h3 class="a1" data-animate="fadeInDown">Video Tutorial 3</h3>
+                             <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_03.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-play-circle-o fa-2x"></i></a>
+                             <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-download fa-2x"></i></a>
+                       </div><!-- he bg -->
+         </div><!-- he view -->
+       </div><!-- he wrap -->
+     </div><!-- end col-12 -->
+
+             <div class="portfolio-item graphic-design">
+                 <div class="he-wrap tpl6">
+       <img src="{% static "img/portfolio/portfolio_04.jpg" %}" alt="">
+         <div class="he-view">
+           <div class="bg a0" data-animate="fadeIn">
+                             <h3 class="a1" data-animate="fadeInDown">Video Tutorial 4</h3>
+                             <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-play-circle-o fa-2x"></i></a>
+                             <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-download fa-2x"></i></a>
+                       </div><!-- he bg -->
+         </div><!-- he view -->
+       </div><!-- he wrap -->
+     </div><!-- end col-12 -->
+
+             <div class="portfolio-item books">
+                 <div class="he-wrap tpl6">
+       <img src="{% static "img/portfolio/portfolio_05.jpg" %}" alt="">
+         <div class="he-view">
+           <div class="bg a0" data-animate="fadeIn">
+                             <h3 class="a1" data-animate="fadeInDown">Video Tutorial 5</h3>
+                             <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-play-circle-o fa-2x"></i></a>
+                             <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-download fa-2x"></i></a>
+                       </div><!-- he bg -->
+         </div><!-- he view -->
+       </div><!-- he wrap -->
+     </div><!-- end col-12 -->
+
+
+         </div><!-- portfolio -->
+     </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+
+
+{% endblock %}
